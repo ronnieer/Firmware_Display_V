@@ -237,7 +237,8 @@ void calculate_ftENATime(void){
 }
 
 
-void HUB75_ENATime(void){    
+void HUB75_ENATime(void){ 
+    calculate_ftENATime();   
     gpio_set_level(BRIGHT_PWM, 1);
     gpio_set_level(D_ENA, 0);
     uint16_t number = 0;

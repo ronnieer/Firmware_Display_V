@@ -49,10 +49,10 @@ void runSPI_Loop(void){
         if(ADC_Average[0] < 0) ADC_Average[0] = 0;
         moveAverageElements(ADC_NumberOfAverages);
         ENATime = calculateAverage(ADC_NumberOfAverages);
-        calculate_ftENATime();
-        printf("ADC_NumberOfAverages; %d\r\n", ADC_NumberOfAverages);
-        printf("ADC_Average[0]: %d \r\n", ADC_Average[0]);
-        printf("ENATime: %d \r\n", ENATime);
+        // calculate_ftENATime();
+        // printf("ADC_NumberOfAverages; %d\r\n", ADC_NumberOfAverages);
+        // printf("ADC_Average[0]: %d \r\n", ADC_Average[0]);
+        // printf("ENATime: %d \r\n", ENATime);
         if((LED_D_Data[LED_D_SOT][0] == SOT) && (LED_D_Data[LED_D_EOT][0] == EOT)){
             HUB75_ColorData(LED_D_Data);
             HUB75_Block1_Print(LED_D_Data);
